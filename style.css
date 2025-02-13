@@ -6,28 +6,32 @@
   font-family: Lato, sans-serif;
 }
 
-.main-content {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.main-content img {
+.header__figure {
+  margin: 0;
+}
+
+.header__img {
   width: 100%;
 }
 
-.main-content .more-details {
+.header__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-  .main-content {
+  .header {
     text-align: center;
   }
 }
 
-.centered-main-page-element {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -39,7 +43,7 @@
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.section-add-item__content {
   display: flex;
 }
 
@@ -53,7 +57,8 @@
 }
 
 .input-text, 
-.button, .checkbox {
+.button,
+ .checkbox {
   outline: none;
 }
 
@@ -73,7 +78,7 @@
 
 /* Heading */
 
-.heading {
+.section__heading {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -102,7 +107,7 @@
 
 /* New Task */
 
-.new-task-label {
+.section__heading_add-item {
   display: block;
   margin: 0 0 20px;
 }
