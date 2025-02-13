@@ -19,53 +19,53 @@
   </header>
   
   <main class="main">
-    <section class="section section-add-item">
-      <h2 class="section__heading section__heading_add-item" for="new-task">Add Item</h2>
-      <div class="section-add-item__content">
+    <section class="todo">
+      <h2 class="todo__heading todo__heading_type_add-item">Add Item</h2>
+      <div class="todo__input-wrapper">
         <input 
-        id="new-task" 
-        class="input-text task-input task" 
-        type="text"
-        placeholder="Enter a new task"
+          id="new-task" 
+          class="todo__input-text todo__input-text_type_task" 
+          type="text"
+          placeholder="Enter a new task"
         >
-        <button class="button" type="button">Add</button>
+        <button class="todo__button todo__button_type_add" type="button">Add</button>
       </div>
     </section>
     
-    <section class="section">
-      <h2 class="section__heading">Todo</h2>
-      <ul id="incomplete-tasks" class="list">
-        <li class="list-item task-list-item">
-          <input class="checkbox" type="checkbox" id="task1">
-          <label for="task1" class="task task-label">Pay Bills</label>
-          <input type="text" class="input-text task-input task">
-          <button class="button edit" type="button">Edit</button>
-          <button class="button delete-button" type="button">
-            <img src="./remove.svg" alt="Remove task">
+    <section class="todo">
+      <h2 class="todo__heading">Todo</h2>
+      <ul id="incomplete-tasks" class="todo__list">
+        <li class="todo__list-item">
+          <input class="todo__checkbox" type="checkbox">
+          <label class="todo__task-label">Pay Bills</label>
+          <input type="text" class="todo__input-text todo__input-text_type_task">
+          <button class="todo__button todo__button_type_edit" type="button">Edit</button>
+          <button class="todo__button todo__button_type_delete" type="button">
+            <img class="todo__button-icon" src="./remove.svg" alt="Remove task">
           </button>
         </li>
-        <li class="list-item edit-mode task-list-item">
-          <input class="checkbox" type="checkbox" id="task2">
-          <label for="task2" class="task task-label">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="input-text task-input task">
-          <button class="button edit" type="button">Save</button>
-          <button class="button delete-button" type="button">
-            <img src="./remove.svg" alt="Remove task">
+        <li class="todo__list-item todo__list-item_state_edit-mode">
+          <input class="todo__checkbox" type="checkbox">
+          <label class="todo__task-label">Go Shopping</label>
+          <input type="text" value="Go Shopping" class="todo__input-text todo__input-text_type_task">
+          <button class="todo__button todo__button_type_edit" type="button">Save</button>
+          <button class="todo__button todo__button_type_delete" type="button">
+            <img class="todo__button-icon" src="./remove.svg" alt="Remove task">
           </button>
         </li>
       </ul>
     </section>
     
-    <section class="section">
-      <h2 class="section__heading">Completed</h2>
-      <ul id="completed-tasks" class="list">
-        <li class="list-item task-list-item">
-          <input class="checkbox" type="checkbox" checked id="task3">
-          <label for="task3" class="task task-label">See the Doctor</label>
-          <input type="text" class="input-text task-input task">
-          <button class="button edit" type="button">Edit</button>
-          <button class="button delete-button" type="button">
-            <img src="./remove.svg" alt="Remove task">
+    <section class="todo">
+      <h2 class="todo__heading">Completed</h2>
+      <ul id="completed-tasks" class="todo__list">
+        <li class="todo__list-item">
+          <input class="todo__checkbox" type="checkbox" checked>
+          <label class="todo__task-label">See the Doctor</label>
+          <input type="text" class="todo__input-text todo__input-text_type_task">
+          <button class="todo__button todo__button_type_edit" type="button">Edit</button>
+          <button class="todo__button todo__button_type_delete" type="button">
+            <img class="todo__button-icon" src="./remove.svg" alt="Remove task">
           </button>
         </li>
       </ul>
